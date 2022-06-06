@@ -24,6 +24,6 @@ jobs:
           aws-region: eu-west-1
       
       - name: Sync up to CodeCommit
-        uses: descom-es/backup-repo
+        uses: descom-es/backup-repo@v1
         with:
           prefix: backup-
