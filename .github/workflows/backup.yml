@@ -22,8 +22,8 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-west-1
-      
+
       - name: Sync up to CodeCommit
-        uses: descom-es/backup-repo@v0
+        uses: descom-es/backup-repo@v1
         with:
           prefix: backup-
